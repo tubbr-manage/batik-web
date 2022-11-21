@@ -1,0 +1,23 @@
+:root {
+    --clr-: #667085;
+    --clr-: #101828;
+    --clr-: #540FA8;
+    --clr-: #896BAF;
+    --clr-: #4B7AFF;
+
+    --fs-body-300: 14px;
+    --fs-body-400: 16px;
+    --fs-body-600: 20px;
+
+    --fs-heading-400: 20px;
+    --fs-heading-500: 20px;
+    --fs-heading-600: 20px;
+
+    --ff-body: 'Mulish', sans-serif;
+}
+
+body{
+    font-family: var(--ff-body);
+    font-size: var(--fs-body-400);
+}
+
