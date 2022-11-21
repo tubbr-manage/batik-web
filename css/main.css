@@ -125,7 +125,7 @@ nav {
     padding-inline: 0;
 }
 
-#benefits-section, #benefit-range-section, #history-section, #why-section {
+#benefits-section, #benefit-range-section, #history-section, #why-section, #care-section, #easy-steps-section {
     padding-block: 5rem;
 }
 
@@ -154,7 +154,8 @@ nav {
     width: 90vw;
     /* max-width: 60%; */
 }
-.benefit-item-reverse{
+
+.benefit-item-reverse {
     justify-content: flex-end;
     text-align: right;
 }
@@ -166,25 +167,25 @@ nav {
     width: 50ch;
 }
 
-.benefit-text h3{
+.benefit-text h3 {
     font-size: var(--fs-heading-400);
 }
 
-#benefit-range-section{
+#benefit-range-section {
     background-color: var(--clr-sc-1);
 }
 
-#benefit-range-section h2{
+#benefit-range-section h2 {
     max-width: 25ch;
     margin-bottom: 2.5rem;
 }
 
-#benefit-range-section p{
+#benefit-range-section p {
     max-width: 70ch;
     margin-bottom: 2.5rem;
 }
 
-.range-container{
+.range-container {
     display: grid;
     grid-auto-columns: 1fr;
     grid-column-gap: 1rem;
@@ -196,11 +197,11 @@ nav {
     background-color: var(--clr-white);
 }
 
-#history-section{
+#history-section {
     position: relative;
 }
 
-.founder-curtain{
+.founder-curtain {
     display: grid;
     align-items: baseline;
     padding-top: 10rem;
@@ -214,41 +215,41 @@ nav {
     position: absolute;
 }
 
-.curtain-left{
-    top:0;
-    left: 8%;  
+.curtain-left {
+    top: 0;
+    left: 8%;
 }
 
-.curtain-right{
+.curtain-right {
     background: var(--gr-3f);
     background: var(--gr-3);
     right: 8%;
 }
 
-.idea-grid{
+.idea-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-inline: 2rem;
 }
 
-.idea-item ~div:nth-child(3){
+.idea-item~div:nth-child(3) {
     margin-top: 10rem;
 }
 
-#idea-path{
+#idea-path {
     margin-top: 18rem;
     margin-left: 2rem;
     z-index: -1;
 }
 
-.tab-menu-list{
+.tab-menu-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1.5rem;
     margin-inline: 4rem;
 }
 
-.tab-menu{
+.tab-menu {
     margin-top: 3rem;
     padding-top: 2rem;
     text-align: left;
@@ -261,11 +262,11 @@ nav {
     cursor: pointer;
 }
 
-.tab-menu-active{
+.tab-menu-active {
     opacity: 1;
 }
 
-.tab-menu-active::after{
+.tab-menu-active::after {
     position: absolute;
     content: '';
     height: 4px;
@@ -276,9 +277,140 @@ nav {
     background-color: var(--clr-pc-500);
 }
 
-.tab-menu h4{
+.tab-menu h4 {
     font-family: var(--ff-heading-2);
     font-size: var(--fs-body-400);
     font-weight: 700;
     margin-bottom: 0.875rem;
+}
+
+.care-desc {
+    font-size: var(--fs-heading-400);
+    font-weight: 700;
+    color: var(--clr-pc-200);
+}
+
+
+#care-recap-section{
+    padding-top: 5rem;
+    padding-bottom: 0;
+}
+
+.care-text {
+    max-width: 50ch;
+}
+
+#care-section>.flex-row {
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+}
+
+.grid-container{
+    background-color: var(--clr-sc-1);
+    margin-top: 3.75rem;
+    width: 100%;
+}
+
+.benefit-admin-grid {
+    margin-inline: auto;
+    padding-block: 2.5rem;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 2.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    max-width: 766px;
+}
+
+.benefit-admin-item{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 2rem 1.5rem 4rem 1.5rem;
+    background-color: var(--clr-white);
+    width: 250px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.15);
+}
+
+.benfit-category-symbol{
+    width: 50px;
+    aspect-ratio: 1;
+}
+
+.benefit-subheading{
+    font-family: var(--ff-heading-3);
+    font-weight: 500;
+    font-size: var(--fs-body-600);
+}
+.benefit-text{
+    font-size: var(--fs-body-200);
+    width: 100%;
+}
+
+.sponsor-logos {
+    margin-top: 1rem;
+    display: grid;
+    max-width: 172px;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-areas: "Area";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.employer-journey, .employee-journey{
+    padding: 1rem 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.joruney-img{
+    margin-bottom: 5rem;
+}
+
+.employer-journey{
+    background-color: #fffaeb;
+    color: #fdb022;
+}
+.employee-journey{
+    background-color: #ecfdf3;
+    color: #12b76a;
+}
+
+.faq-box{
+    border: 1px solid var(--clr-pc-200);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.faq-question{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 766px;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.faq-ans{
+    margin-block: 1rem;
+    display: none;
+    opacity: 0.4;
+    transition: all 0.3s ease-in-out;
+}
+
+.faq-ans-active{
+    display: inline-block;
+    opacity: 1;
+}
+
+.faq-ans > p{
+    margin-bottom: 1rem;
 }

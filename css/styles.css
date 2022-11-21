@@ -18,6 +18,7 @@
     --gr-3: linear-gradient(0deg, rgba(253,232,182,1) 0%, rgba(254,249,236,1) 80%, rgba(255,255,255,1) 100%);
 
 
+    --fs-body-200: 12px;
     --fs-body-300: 14px;
     --fs-body-400: 16px;
     --fs-body-600: 20px;
@@ -30,6 +31,7 @@
     --ff-body-2: 'Roboto', sans-serif;
     --ff-heading: 'Sailec', sans-serif;
     --ff-heading-2: 'Subjectivity', sans-serif;
+    --ff-heading-3: 'Playfair Display', sans-serif;
 }
 
 
@@ -62,6 +64,10 @@ h1, h2, h3, h4 {
     line-height: 1.25;
     color: var(--clr-pc-900);
     margin-bottom: 2.5rem;
+}
+
+h3, h4{
+    margin-bottom: 1rem;
 }
 
 h2{
