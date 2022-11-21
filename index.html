@@ -8,14 +8,22 @@
 
     <!-- Fonts -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;1,400&display=swap');
     </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+    </style>
+
+    <!-- //need to make all in one google font call -->
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/main.css">
 
     <title>Batik</title>
+
+    <!-- lottie player  -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 
 
@@ -25,19 +33,353 @@
     <div class="announcement-alert" id="alert">
         <span class="alert-title">
             SPECIAL OFFER:
-        </span> 
+        </span>
         <span class="alert-text">
             Sign up Now! Get Free Access for 365 Days.
         </span>
     </div>
-    <nav>
-        <div class="logo">
-            <img src="assets/logo.png" alt="Batik" srcset="">
-        </div>
-    </nav>
-    <main>
 
+    <main id="main-section">
+        <nav>
+            <div class="logo">
+                <lottie-player src="assets/animation/batik_logo.json" background="transparent" speed="1"
+                    style="width: 120px; height: 120px;" loop autoplay></lottie-player>
+                <!-- <img src="assets/logo.png" alt="Batik" srcset=""> -->
+            </div>
+        </nav>
+        <section>
+            <h3 class="hero-h3 underline">
+                Your Employee Benefits Just Got
+                <span class="bold">Easier.</span>
+                And It’s
+                <span class="bold">Cost Effective!</span>
+            </h3>
+            <h2 class="hero-h2">
+                We Get It!
+                <span class="bold">
+                    “Designing and implementing”
+                </span>
+                the right
+                set of employee benefits can be challenging,
+                especially when you already have so much on your plate.
+            </h2>
+        </section>
     </main>
+    <section id="primary-cta-section">
+        <p class="cta-text">
+            (Batik is a one-stop platform for Employee benefits because deals are seamlessly arranged with vendors and
+            cater to the needs of all your employees. That means you can enjoy peace of mind and let Batik take care of
+            everything.)
+        </p>
+        <button class="btn btn-cta">Book a Free Demo - Call Today</button>
+    </section>
+    <section id="what-batik">
+        <h2>
+            What is Batik?
+        </h2>
+        <h4>
+            Batik - Customise Employee Benefits at your fingertips
+        </h4>
+        <div class="video-player">
+            <div class="video-player-nav">
+                <img src="assets/mac_menu.png" alt="Mac Menu Bar">
+            </div>
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="1100" height="562.5"
+                type="text/html"
+                src="https://www.youtube.com/embed/bRN7VOrrYiU?rel=0?version=3&autoplay=1&controls=0&&showinfo=0&loop=1"></iframe>
+        </div>
+    </section>
+    <section id="customers-section">
+        <h2>
+            Our Customers
+        </h2>
+        <div class="marquee">
+
+        </div>
+    </section>
+    <section id="benefits-section">
+        <h2>
+            Putting Your People First
+        </h2>
+        <p class="benefit-detail">
+            Do you find it difficult to manage all benefits on your own? We’re here to help.
+            Batik is a one-stop shop for managing all of your benefits and employee experience needs.
+        </p>
+
+        <div class="benefits">
+
+            <div class="benefit-item">
+                <img class="benifit-img" src="assets/one-stop.png" alt="" srcset="">
+                <div class="benefit-text">
+                    <h3>One-stop shop for all your benefits needs</h3>
+                    <p class="benefit-detail">
+                        With Batik, you can manage all of your benefits in one place - from availing to activating,
+                        leave management, and more. You can even create custom packages with the right combination of
+                        perks to attract the best talent.
+                    </p>
+                </div>
+            </div>
+            <div class="benefit-item benefit-item-reverse">
+                <div class="benefit-text">
+                    <h3>No need for an admin’s time and effort</h3>
+                    <p class="benefit-detail">
+                        With Batik, you can manage all of your benefits in one place - from availing to activating,
+                        leave management, and more. You can even create custom packages with the right combination of
+                        perks to attract the best talent.
+                    </p>
+                </div>
+                <img class="benifit-img" src="assets/admin-time.png" alt="" srcset="">
+
+            </div>
+            <div class="benefit-item">
+                <img class="benifit-img" src="assets/custom-packages.png" alt="" srcset="">
+                <div class="benefit-text">
+                    <h3>Create custom packages that suit your needs</h3>
+                    <p class="benefit-detail">
+                        Create a custom package that matches your organization’s culture and values - we’ll help you get
+                        there seamlessly with our platform that offers both a set of standard plans as well as fully
+                        customizable ones.
+                    </p>
+                </div>
+            </div>
+            <div class="benefit-item benefit-item-reverse">
+                <div class="benefit-text">
+                    <h3>Elevate employee engagement</h3>
+                    <p class="benefit-detail">
+                        With Batik, employees are engaged more than ever before because they’re enabled to do what they
+                        want when they want.
+                    </p>
+                </div>
+                <img class="benifit-img" src="assets/elevate-employee.png" alt="" srcset="">
+
+            </div>
+            <div class="benefit-item">
+                <img class="benifit-img" src="assets/workplace-culture.png" alt="" srcset="">
+                <div class="benefit-text">
+                    <h3>Don’t let benefits dictate your workplace culture</h3>
+                    <p class="benefit-detail">
+                        Traditional benefits providers have limited knowledge about today’s employee needs, which means
+                        they’re unable to create a sustainable workplace culture. At Batik, we’re different. We offer a
+                        marketplace of benefits and solutions so you can work with us to create an employee-centric
+                        workplace culture that suits YOU!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <button class="btn btn-cta">Book a Free Demo - Call Today</button>
+
+    </section>
+
+    <section id="benefit-range-section">
+        <h2>Embrace the choice of benefits at your fingertips</h2>
+        <p>Have access to Batik Marketplace to choose benefits that mean the most to your employees from best-in-class
+            providers at best costs</p>
+
+        <div class="range-container">
+            <div class="range-item">
+                <img src="https://uploads-ssl.webflow.com/61a5df232287244d02ffa4db/629ddcc1b6e4378b0c1008ec_Group%2039830.svg"
+                    alt="" srcset="">
+            </div>
+            <div class="range-item">
+                <img src="https://uploads-ssl.webflow.com/61a5df232287244d02ffa4db/6336690bd772bb1f08e2bea4_wework.png"
+                    alt="" srcset="">
+            </div>
+            <div class="range-item">
+                <img src="https://uploads-ssl.webflow.com/61a5df232287244d02ffa4db/6336690bd772bb1f08e2bea4_wework.png"
+                    alt="" srcset="">
+            </div>
+            <div class="range-item">
+                <img src="https://uploads-ssl.webflow.com/61a5df232287244d02ffa4db/629ddcc1b6e4378b0c1008ec_Group%2039830.svg"
+                    alt="" srcset="">
+            </div>
+            <div class="range-item">
+                <img src="https://uploads-ssl.webflow.com/61a5df232287244d02ffa4db/629ddcc1b6e4378b0c1008ec_Group%2039830.svg"
+                    alt="" srcset="">
+            </div>
+            <div class="range-item">
+                <img src="https://uploads-ssl.webflow.com/61a5df232287244d02ffa4db/629ddcc1b6e4378b0c1008ec_Group%2039830.svg"
+                    alt="" srcset="">
+            </div>
+            <div class="range-item">
+                <img src="https://uploads-ssl.webflow.com/61a5df232287244d02ffa4db/629ddcc1b6e4378b0c1008ec_Group%2039830.svg"
+                    alt="" srcset="">
+            </div>
+            <div class="range-item">
+                <img src="https://uploads-ssl.webflow.com/61a5df232287244d02ffa4db/629ddcc1b6e4378b0c1008ec_Group%2039830.svg"
+                    alt="" srcset="">
+            </div>
+            <div class="range-item">
+                <img src="https://uploads-ssl.webflow.com/61a5df232287244d02ffa4db/629ddcc1b6e4378b0c1008ec_Group%2039830.svg"
+                    alt="" srcset="">
+            </div>
+            <div class="range-item">
+                <img src="https://uploads-ssl.webflow.com/61a5df232287244d02ffa4db/629ddcc1b6e4378b0c1008ec_Group%2039830.svg"
+                    alt="" srcset="">
+            </div>
+            <div class="range-item">
+                <img src="https://uploads-ssl.webflow.com/61a5df232287244d02ffa4db/629ddcc1b6e4378b0c1008ec_Group%2039830.svg"
+                    alt="" srcset="">
+            </div>
+            <div class="range-item">
+                <img src="https://uploads-ssl.webflow.com/61a5df232287244d02ffa4db/629ddcc1b6e4378b0c1008ec_Group%2039830.svg"
+                    alt="" srcset="">
+            </div>
+            <div class="range-item">
+                <img src="https://uploads-ssl.webflow.com/61a5df232287244d02ffa4db/629ddcc1b6e4378b0c1008ec_Group%2039830.svg"
+                    alt="" srcset="">
+            </div>
+            <div class="range-item">
+                <img src="https://uploads-ssl.webflow.com/61a5df232287244d02ffa4db/629ddcc1b6e4378b0c1008ec_Group%2039830.svg"
+                    alt="" srcset="">
+            </div>
+            <div class="range-item">
+                <img src="https://uploads-ssl.webflow.com/61a5df232287244d02ffa4db/629ddcc1b6e4378b0c1008ec_Group%2039830.svg"
+                    alt="" srcset="">
+            </div>
+            <div class="range-item">
+                <img src="https://uploads-ssl.webflow.com/61a5df232287244d02ffa4db/629ddcc1b6e4378b0c1008ec_Group%2039830.svg"
+                    alt="" srcset="">
+            </div>
+            <div class="range-item">
+                <img src="https://uploads-ssl.webflow.com/61a5df232287244d02ffa4db/629ddcc1b6e4378b0c1008ec_Group%2039830.svg"
+                    alt="" srcset="">
+            </div>
+            <div class="range-item">
+                <img src="https://uploads-ssl.webflow.com/61a5df232287244d02ffa4db/629ddcc1b6e4378b0c1008ec_Group%2039830.svg"
+                    alt="" srcset="">
+            </div>
+            <div class="range-item">
+                <img src="https://uploads-ssl.webflow.com/61a5df232287244d02ffa4db/629ddcc1b6e4378b0c1008ec_Group%2039830.svg"
+                    alt="" srcset="">
+            </div>
+            <div class="range-item">
+                <img src="https://uploads-ssl.webflow.com/61a5df232287244d02ffa4db/629ddcc1b6e4378b0c1008ec_Group%2039830.svg"
+                    alt="" srcset="">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="history-section">
+        <div class="founder-curtain curtain-left">
+            <img src="assets/PRAMEY-JAIN.png" alt="PRAMEY JAIN" srcset="">
+        </div>
+        <div class="founder-curtain curtain-right">
+            <img src="assets/MEET-SEMLANI.png" alt="PRAMEY JAIN" srcset="">
+        </div>
+        <h2>How it all Started?</h2>
+        <p>
+            <span class="bold">Pramey Jain and Meet Semlani</span> - Both co-founders of Tartan & Batik have worked
+            together for many years and that’s how they were driven by a common goal of
+            helping the gig economy.
+        </p>
+        <br>
+        <p>
+            And that’s how the Tartan product was built in <span class="bold">June 2021.</span> At Tartan, they focus on
+            real-time data and verification (through a single API), enabling consent-driven
+            income, employment, and identity verification in less than a minute. And this
+            unique solution is built via direct sources like payrolls, govt APIs, etc.
+        </p>
+    </section>
+
+    <section id="idea-section">
+        <h3>They didn’t stop there. Birth of another big idea:</h3>
+
+        <div class="idea-grid">
+            <div class="idea-item flex-col">
+                <img src="assets/one-stop.png" alt="">
+                <p class="ta-l">
+                    With 6 months into building Tartan, Meet and Pramey realized there is another unsaid, unattended
+                    need in
+                    the market - <span class="bold">The employees.</span> While the larger problems for companies were
+                    addressed, no one was providing solutions for employees or workers. That’s how the Batik
+                    distribution
+                    platform began.
+                </p>
+            </div>
+            <div>
+                <img id="idea-path" src="assets/idea-path.png" alt="">
+
+            </div>
+
+            <div class="idea-item flex-col">
+                <img src="assets/one-stop.png" alt="">
+                <p class="ta-l">
+                    Our partnership has grown to over <span class="bold">60+ brand partners and 120+ products</span>
+                    listed
+                    on our platform (and growing). We empower over one million employees to have immediate access and
+                    personalized benefits that address their unique needs and help them achieve a stress-free life.
+                </p>
+            </div>
+        </div>
+        <div class="idea-item flex-row">
+            <img src="assets/one-stop.png" alt="">
+            <p>
+                With our unified employee <span class="bold">benefits suite</span>, we provide you with the best of
+                healthcare, financial wellbeing, insurance, fitness benefits, and discounts that support talent
+                acquisition, retention, and growth.
+            </p>
+        </div>
+    </section>
+    <section id="why-section">
+        <h2>Why Batik?</h2>
+
+        <div class="whys">
+
+            <div class="why-item flex-row">
+                <p class="ta-r">
+                    With our unified employee <span class="bold">benefits suite</span>, we provide you with the best of
+                    healthcare, financial wellbeing, insurance, fitness benefits, and discounts that support talent
+                    acquisition, retention, and growth.
+                </p>
+                <img src="assets/one-stop.png" alt="">
+
+            </div>
+            <div class="why-item flex-row">
+                <img src="assets/one-stop.png" alt="">
+                <p class="ta-l">
+                    With our unified employee <span class="bold">benefits suite</span>, we provide you with the best of
+                    healthcare, financial wellbeing, insurance, fitness benefits, and discounts that support talent
+                    acquisition, retention, and growth.
+                </p>
+            </div>
+        </div>
+        <button class="btn btn-cta">Book a Free Demo - Call Today</button>
+        </div>
+    </section>
+
+    <section id="how-section">
+        <h2>How it works?</h2>
+        <div class="video-player">
+            <div class="video-player-nav">
+                <img src="assets/mac_menu.png" alt="Mac Menu Bar">
+            </div>
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="900" height="506.25"
+                type="text/html"
+                src="https://www.youtube.com/embed/bRN7VOrrYiU?rel=0?version=3&autoplay=1&controls=0&&showinfo=0&loop=1"></iframe>
+        </div>
+
+        <div class="tab-menu-list">
+            <div class="tab-menu tab-menu-active">
+                <h4>1. Employer Login</h4>
+                <p>Setup your account quickly to login using your email.</p>
+            </div>
+            <div class="tab-menu">
+                <h4>1. Employer Login</h4>
+                <p>Setup your account quickly to login using your email.</p>
+            </div>
+            <div class="tab-menu">
+                <h4>1. Employer Login</h4>
+                <p>Setup your account quickly to login using your email.</p>
+            </div>
+            <div class="tab-menu">
+                <h4>1. Employer Login</h4>
+                <p>Setup your account quickly to login using your email.</p>
+            </div>
+
+        </div>
+    </section>
 </body>
 
 </html>
