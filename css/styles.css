@@ -16,6 +16,7 @@
     --gr-2: linear-gradient(0deg, rgba(253,199,180,1) 0%, rgba(255,252,250,1) 80%, rgba(255,255,255,1) 100%);
     --gr-3f: rgb(255,255,255);
     --gr-3: linear-gradient(0deg, rgba(253,232,182,1) 0%, rgba(254,249,236,1) 80%, rgba(255,255,255,1) 100%);
+    --gr-4: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(254,249,236,1) 80%, rgba(253,232,182,1) 100%);
 
 
     --fs-body-200: 12px;
@@ -58,6 +59,8 @@ body {
     color: var(--clr-pc-200);
     font-weight: 400;
     text-align: center;
+    position: relative;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {

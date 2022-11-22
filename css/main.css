@@ -100,6 +100,16 @@ nav {
     border-radius: 16px;
 }
 
+#steps-video{
+    aspect-ratio: 16/9;
+    width: 100%;
+    max-width: 700px;
+    /* background-image: url(https://uploads-ssl.webflow.com/61a5df232287244d02ffa4db/62d697a87b306512d2b68113_1]-poster-00001.jpg);
+    background-repeat: no-repeat;
+    bac */
+}
+
+
 .video-player-nav {
     position: relative;
     display: flex;
@@ -135,7 +145,7 @@ nav {
 
 .benefit-detail {
     font-size: var(--fs-body-400);
-    max-width: 80ch;
+    max-width: 50ch;
 }
 
 .benefits {
@@ -284,6 +294,10 @@ nav {
     margin-bottom: 0.875rem;
 }
 
+.tab-menu > * {
+    pointer-events: none;
+}
+
 .care-desc {
     font-size: var(--fs-heading-400);
     font-weight: 700;
@@ -304,8 +318,12 @@ nav {
     gap: 1.5rem;
     align-items: flex-start;
     margin-bottom: 4rem;
+    text-align: left;
 }
 
+#care-section > img{
+    margin-bottom: 2.5rem;
+}
 .grid-container{
     background-color: var(--clr-sc-1);
     margin-top: 3.75rem;
@@ -388,6 +406,11 @@ nav {
     padding: 1.5rem;
     text-align: left;
     margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.faq-box > * {
+    pointer-events: none;
 }
 
 .faq-question{
@@ -413,4 +436,80 @@ nav {
 
 .faq-ans > p{
     margin-bottom: 1rem;
+}
+
+/* Modal */
+.modal-container{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: #1018288f;
+    inset: 0;
+    display: none;
+}
+
+.form-container{
+    position: relative;
+    max-width: min(90%,976px);
+    margin-inline: auto;
+    margin-top: min(5vh,60px);
+    padding: 2rem 8rem;
+    background: var(--gr-4);
+    border: 3px solid #454444;
+}
+
+.form-container::after{
+    position: absolute;
+    content: url(../assets/form_illustration.png);
+    width: 245px;
+    bottom: -10px;
+    left: -80px;
+}
+
+.close-btn{
+    position: absolute;
+    content: '';
+    background-color: #101828;
+    width: 60px;
+    height: 60px;
+    top: -3px;
+    right: -3px;
+    display: grid;
+    align-items: center;
+    color: var(--clr-white);
+    cursor: pointer;
+}
+
+.form-container h2{
+    font-size: var(--fs-body-600);
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+    font-weight: 700;
+    color: #1A1A1A;
+    margin-bottom: 0.8rem;
+}
+
+.form-field:last-child{
+    margin-bottom: 2rem;
+}
+.field-label{
+    font-size: var(--fs-body-300);
+}
+
+.field-label .mandatory{
+    color: #FF0000;
+}
+
+.field{
+    padding: 0.5rem;
+    border: 1px solid #707070;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
 }

@@ -24,6 +24,7 @@
 [-] Create Website Preview Link
 [ ] Add Subjectivity Font
 [X] Add Sailec Font
+[X] Create Form Modal Layout
 [ ] Add Javascript Structure
 [ ] Add Interactivity
 [ ] Responsive for Tablet
