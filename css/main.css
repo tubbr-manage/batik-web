@@ -269,6 +269,10 @@ nav {
     z-index: -1;
 }
 
+.whys{
+    margin-bottom: 2.5rem;
+}
+
 .tab-menu-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -529,4 +533,8 @@ nav {
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
+}
+
+.thank-you{
+    display: none;
 }
