@@ -10,12 +10,12 @@ body {
     overflow: hidden;
     user-select: none;
     gap: var(--gap);
-    transform: skewY(-2deg);
     filter: grayscale(0.9);
     transition: all 0.4s ease-in-out;
 }
 
 .marquee:hover{
+    transform: skewY(-2deg);
     filter: grayscale(0);
 }
 

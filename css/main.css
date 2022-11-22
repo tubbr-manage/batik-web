@@ -145,8 +145,13 @@ nav {
 
 .benefit-detail {
     font-size: var(--fs-body-400);
-    max-width: 50ch;
+    max-width: 100%;
 }
+.benefit-subtitle {
+    font-size: var(--fs-body-400);
+    max-width: 80ch;    
+}
+
 
 .benefits {
     display: flex;
@@ -161,13 +166,18 @@ nav {
     text-align: left;
     align-items: center;
     justify-content: flex-start;
-    width: 90vw;
-    /* max-width: 60%; */
+    max-width: 100%;
+    width: min(750px,90vw);
 }
 
 .benefit-item-reverse {
-    justify-content: flex-end;
+    justify-items: flex-end;
     text-align: right;
+    margin-left: auto;
+}
+
+.benefit-item:last-child{
+    margin-bottom: 2.5rem
 }
 
 .benefit-text {
@@ -239,7 +249,7 @@ nav {
 .idea-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-inline: 2rem;
+    margin-inline: 5rem;
 }
 
 .idea-item~div:nth-child(3) {
