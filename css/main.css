@@ -104,9 +104,6 @@ nav {
     aspect-ratio: 16/9;
     width: 100%;
     max-width: 700px;
-    /* background-image: url(https://uploads-ssl.webflow.com/61a5df232287244d02ffa4db/62d697a87b306512d2b68113_1]-poster-00001.jpg);
-    background-repeat: no-repeat;
-    bac */
 }
 
 
@@ -217,6 +214,17 @@ nav {
     background-color: var(--clr-white);
 }
 
+.range-item{
+    filter: grayscale(0.9);
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.range-item:hover{
+    transform: skewY(-3deg);
+    filter: grayscale(0);
+}
+
 #history-section {
     position: relative;
 }
@@ -231,7 +239,6 @@ nav {
     max-width: max-content;
     background: var(--gr-2f);
     background: var(--gr-2);
-
     position: absolute;
 }
 
