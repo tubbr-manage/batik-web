@@ -1,0 +1,192 @@
+@media screen and (max-width: 1024px) {
+    :root {
+        --fs-heading-400: 16px;
+        --fs-heading-500: 20px;
+        --fs-heading-600: 24px;
+
+        --fs-body-300: 12px;
+        --fs-body-400: 14px;
+        --fs-body-600: 16px;
+    }
+
+    h1, h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    h3, h4 {
+        margin-bottom: 1rem;
+    }
+
+    .logo>lottie-player {
+        height: 50px;
+    }
+
+    .hero-h3 {
+        margin-bottom: 2.5rem;
+    }
+
+    .hero-h2 {
+        margin-bottom: 6rem;
+    }
+
+    nav, section {
+        padding-inline: 1rem;
+        display: grid;
+        justify-items: center;
+    }
+
+    #what-batik, #benefits-section, #benefit-range-section, #history-section, #why-section, #care-section, #easy-steps-section, #how-section, #faq-section {
+        padding-block: 2rem;
+    }
+
+    .founder-curtain {
+        padding-top: 1.5rem;
+        padding-bottom: 0.1rem;
+    }
+
+    .founder-curtain img {
+        width: clamp(50px, 60px, 90px);
+    }
+
+    #idea-path {
+        margin-top: 20rem;
+        margin-left: 0;
+        z-index: -1;
+    }
+
+    .whys {
+        margin-inline: 2rem;
+    }
+
+    .why-item img {
+        width: 200px;
+    }
+
+    .tab-menu-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+        margin-inline: 3rem;
+    }
+
+    .tab-menu {
+        margin-top: 0.5rem;
+        padding-top: 1rem;
+    }
+
+    #care-section>.flex-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #care-recap-section {
+        padding-top: 2rem;
+    }
+
+    .benefit-admin-grid {
+        padding-inline: 0.5rem;
+        padding-block: 0.5rem;
+        grid-row-gap: 1rem;
+    }
+
+    .grid-container {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    :root {
+        --fs-heading-400: 16px;
+        --fs-heading-500: 18px;
+        --fs-heading-600: 22px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .logo>lottie-player {
+        height: 150px;
+    }
+
+    #main-section {
+        background-size: cover;
+    }
+
+    #main-section>* {
+        backdrop-filter: blur(2px);
+    }
+
+    .ta-r {
+        text-align: left;
+    }
+
+    .video-player {
+        padding: 0.5rem 0.5rem 1rem;
+        width: clamp(250px, 100%, 350px);
+    }
+
+    .video-player-nav img{
+        height: 10px;
+    }
+
+    .benefit-item {
+        flex-direction: column;
+        margin-inline: auto;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .benefit-item-reverse{
+        flex-direction: column-reverse;
+    }
+
+    .benifit-img {
+        width: clamp(150px, 200px, 225px);
+    }
+
+    .idea-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-inline: 2rem;
+    }
+
+    .idea-grid div:nth-child(2) {
+        display: none;
+    }
+
+    .idea-item~div:nth-child(3) {
+        margin-block: 2rem;
+    }
+
+    .idea-item.flex-row {
+        margin-inline: 1rem;
+        flex-direction: column;
+    }
+
+    .why-item.flex-row {
+        flex-direction: column;
+    }
+
+    .why-item.flex-row:first-child {
+        flex-direction: column-reverse;
+    }
+
+    .benefit-admin-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .benefit-admin-item {
+        align-items: center;
+        text-align: center;
+        padding: 2rem 1rem;
+        gap: 0.5rem;
+        background-color: var(--clr-white);
+        /* width: 250px; */
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    .joruney-img {
+        margin-bottom: 2rem;
+    }
+}

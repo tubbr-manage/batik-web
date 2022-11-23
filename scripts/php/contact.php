@@ -1,9 +1,10 @@
 <?php
   header("Access-Control-Allow-Origin: *");
   header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+  
   $receiving_email_address = 'dhruv@tubbrinternet.com';
 
-  if( file_exists($php_email_form = 'php-email-form/php-email-form.php' )) {
+  if( file_exists($php_email_form = 'php-email-form.php' )) {
     include( $php_email_form );
   } else {
     die( 'Unable to load the "PHP Email Form" Library!');

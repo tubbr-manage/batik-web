@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/marquee.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <!-- meta info -->
     <title>Batik | Simplified Flexible Employee Benefits Marketplace</title>
@@ -60,7 +61,7 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
 </head>
 
@@ -78,7 +79,7 @@
         <nav>
             <div class="logo">
                 <lottie-player src="assets/animation/batik_logo.json" background="transparent" speed="1"
-                    style="width: 120px; height: 120px;" loop autoplay></lottie-player>
+                     loop autoplay></lottie-player>
                 <!-- <img src="assets/logo.png" alt="Batik" srcset=""> -->
             </div>
         </nav>
@@ -119,7 +120,7 @@
             <div class="video-player-nav">
                 <img src="assets/mac_menu.png" alt="Mac Menu Bar">
             </div>
-            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="1100" height="562.5"
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%"
                 type="text/html"
                 src="https://www.youtube.com/embed/bRN7VOrrYiU?rel=0?version=3&autoplay=1&controls=0&&showinfo=0&loop=1"></iframe>
         </div>
@@ -470,7 +471,7 @@
         </div>
         <div class="idea-item flex-row">
             <img src="assets/benefit-suite.png" alt="">
-            <p>
+            <p class="ta-l">
                 With our unified employee <span class="bold">benefits suite</span>, we provide you with the best of
                 healthcare, financial wellbeing, insurance, fitness benefits, and discounts that support talent
                 acquisition, retention, and growth.
@@ -832,6 +833,15 @@
                 <lottie-player src="assets/animation/check.json" background="transparent" speed="1"
                     style="width: 120px; height: 120px;" autoplay loop></lottie-player>
                 <h2>Thankyou. We will contact you soon.</h2>
+
+                <!-- Calendly link widget begin -->
+                <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                    async></script>
+                <a href=""
+                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/meetgrowth/meet'});return false;">Book a meet with us</a>
+                <!-- Calendly link widget end -->
+
             </div>
             <form class="form">
                 <h2>Yes, Get me started on Bakit. Please share more information and help me get started for free!</h2>
@@ -866,7 +876,7 @@
 
     </div>
 
- 
+
     <script src="scripts/form.js"></script>
     <script src="scripts/tab-menu.js"></script>
     <script src="scripts/faq.js"></script>

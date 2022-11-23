@@ -20,6 +20,10 @@ nav {
     justify-content: flex-start;
 }
 
+.logo > lottie-player{
+    height: 100px;
+}
+
 #main-section {
     background-image: url(../assets/hero_image.png);
     background-size: 100%;
@@ -48,7 +52,7 @@ nav {
 }
 
 #primary-cta-section {
-    padding-block: 2rem 4.3rem;
+    padding-block: 2rem 4.2rem;
 }
 
 #primary-cta-section .cta-text {
@@ -90,20 +94,18 @@ nav {
     -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.15);
+    width: clamp(300px,80%,766px);
 }
 
 .video-player iframe {
     aspect-ratio: 16/9;
-    width: calc(100vw-160px);
     padding: 0.4rem;
     border: 1px solid var(--clr-pc-800);
     border-radius: 16px;
 }
 
 #steps-video{
-    aspect-ratio: 16/9;
-    width: 100%;
-    max-width: 700px;
+    width: clamp(250px, 100%, 700px);
 }
 
 
@@ -130,9 +132,10 @@ nav {
 #customers-section {
     padding-block: 5rem 2.5rem;
     padding-inline: 0;
+    overflow: hidden;
 }
 
-#benefits-section, #benefit-range-section, #history-section, #why-section, #care-section, #easy-steps-section {
+#benefits-section, #benefit-range-section, #history-section, #why-section, #care-section, #easy-steps-section, #faq-section {
     padding-block: 5rem;
 }
 
@@ -233,13 +236,18 @@ nav {
     display: grid;
     align-items: baseline;
     padding-top: 10rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.4rem;
     border-bottom-left-radius: 100vw;
     border-bottom-right-radius: 100vw;
     max-width: max-content;
     background: var(--gr-2f);
     background: var(--gr-2);
     position: absolute;
+}
+
+.founder-curtain img{
+    width: 128px;
+    aspect-ratio: 1;
 }
 
 .curtain-left {
@@ -259,8 +267,17 @@ nav {
     margin-inline: 5rem;
 }
 
+.idea-grid div:nth-child(3) > img{
+    margin-bottom: 1rem;
+}
+
+
 .idea-item~div:nth-child(3) {
     margin-top: 10rem;
+}
+
+.idea-item img{
+    width: clamp(200px,100%,320px);
 }
 
 #idea-path {
@@ -271,6 +288,14 @@ nav {
 
 .whys{
     margin-bottom: 2.5rem;
+}
+
+.why-item img{
+    width: clamp(150px,100%, 350px);
+}
+
+.why-item{
+    gap: clamp(0.5rem, 1.5rem, 2rem)
 }
 
 .tab-menu-list {
@@ -369,7 +394,7 @@ nav {
     text-align: left;
     padding: 2rem 1.5rem 4rem 1.5rem;
     background-color: var(--clr-white);
-    width: 250px;
+    /* width: 250px; */
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -421,6 +446,10 @@ nav {
     color: #12b76a;
 }
 
+.faqs{
+    min-width: clamp(300px, 70%, 766px);
+}
+
 .faq-box{
     border: 1px solid var(--clr-pc-200);
     border-radius: 0.5rem;
@@ -438,7 +467,6 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    min-width: 766px;
     align-items: center;
     margin-bottom: 0;
 }
@@ -461,7 +489,7 @@ nav {
 
 /* Modal */
 .modal-container{
-    position: absolute;
+    position: fixed;
     height: 100vh;
     width: 100vw;
     background-color: #1018288f;
