@@ -533,8 +533,43 @@ nav {
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
+    transition: border 300ms ease-in;
+}
+
+.field.field-error{
+    border: 2px solid crimson;
+}
+
+.error-message{
+    display: none;
+    margin-top: 2rem;
+    color: crimson;
+}
+
+.error-message > a {
+    color: crimson;
+    font-weight: 700;
+
+}
+
+
+.toast{
+    display: none;
+    font-size: 14px;
+    padding: 1rem 2rem;
+    background-color: rgb(216, 15, 15);
+    border-left: 10px solid black;
+    color: var(--clr-white);
+    width: max-content;
+    position: absolute;
+    bottom: 24px;
+    right: -3px;
 }
 
 .thank-you{
     display: none;
+}
+
+.thank-you lottie-player{
+    margin-inline: auto;
 }
