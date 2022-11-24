@@ -12,11 +12,11 @@
 
     --gr-1f: rgb(75, 122, 255);
     --gr-1: linear-gradient(62deg, rgba(75, 122, 255, 1) 0%, rgba(137, 107, 175, 1) 100%);
-    --gr-2f: rgb(255,255,255);
-    --gr-2: linear-gradient(0deg, rgba(253,199,180,1) 0%, rgba(255,252,250,1) 80%, rgba(255,255,255,1) 100%);
-    --gr-3f: rgb(255,255,255);
-    --gr-3: linear-gradient(0deg, rgba(253,232,182,1) 0%, rgba(254,249,236,1) 80%, rgba(255,255,255,1) 100%);
-    --gr-4: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(254,249,236,1) 80%, rgba(253,232,182,1) 100%);
+    --gr-2f: rgb(255, 255, 255);
+    --gr-2: linear-gradient(0deg, rgba(253, 199, 180, 1) 0%, rgba(255, 252, 250, 1) 80%, rgba(255, 255, 255, 1) 100%);
+    --gr-3f: rgb(255, 255, 255);
+    --gr-3: linear-gradient(0deg, rgba(253, 232, 182, 1) 0%, rgba(254, 249, 236, 1) 80%, rgba(255, 255, 255, 1) 100%);
+    --gr-4: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(254, 249, 236, 1) 80%, rgba(253, 232, 182, 1) 100%);
 
 
     --fs-body-200: 12px;
@@ -36,16 +36,38 @@
 }
 
 
+/* Subjectivity Font */
 @font-face {
-    font-family: 'Sailec';
-    src: url('./fonts/Sailec_Light.ttf') format('truetype');
-    font-weight: light;
+    font-family: 'Subjectivity';
+    src: url('fonts/Subjectivity/Subjectivity-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('fonts/Subjectivity/Subjectivity-Bold.otf') format('opentype');
+    font-weight: 700;
 }
+
+
+@font-face {
+    font-family: 'Subjectivity';
+    src: url('fonts/Subjectivity/Subjectivity-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('fonts/Subjectivity/Subjectivity-Regular.otf') format('opentype');
+    font-weight: 400;
+}
+
+
+/* Playfair Display Font */
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/Playfair_Display/PlayfairDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+
+/* Sailec Font */
 @font-face {
     font-family: 'Sailec';
     src: url('./fonts/Sailec_Medium.ttf') format('truetype');
     font-weight: 500;
 }
+
 @font-face {
     font-family: 'Sailec';
     src: url('./fonts/Sailec_Bold.ttf') format('truetype');
@@ -69,22 +91,23 @@ h1, h2, h3, h4 {
     margin-bottom: 2.5rem;
 }
 
-h3, h4{
+h3, h4 {
     margin-bottom: 1rem;
 }
 
-h2{
+h2 {
     font-family: var(--ff-heading-2);
     font-size: var(--fs-heading-600);
 }
 
-h3{
+h3 {
     font-family: var(--ff-heading);
 }
 
-p{
+p {
     max-width: 70ch;
 }
+
 .underline {
     text-decoration: underline;
 }
@@ -93,7 +116,7 @@ p{
     font-weight: 700;
 }
 
-.btn{
+.btn {
     padding: 0.875em 2.5em;
     border: none;
     border-radius: 4px;
@@ -103,21 +126,21 @@ p{
     transition: all 0.3s ease-in-out;
 }
 
-.flex-row{
+.flex-row {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.flex-col{
+.flex-col {
     display: flex;
     flex-direction: column;
 }
 
-.ta-l{
+.ta-l {
     text-align: left;
 }
 
-.ta-r{
+.ta-r {
     text-align: right;
 }

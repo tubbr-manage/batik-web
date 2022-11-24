@@ -36,7 +36,6 @@ nav {
     max-width: 40ch;
     letter-spacing: -2px;
     font-family: var(--ff-heading);
-    /* replace font with subjectivity */
     font-weight: 500;
     margin-bottom: 10rem;
 }
