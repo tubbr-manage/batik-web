@@ -493,7 +493,8 @@ nav {
     width: 100vw;
     background-color: #1018288f;
     inset: 0;
-    display: none;
+    z-index: 999;
+    /* display: none; */
 }
 
 .form-container{
@@ -505,6 +506,17 @@ nav {
     background: var(--gr-4);
     border: 3px solid #454444;
 }
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form>.flex-row{
+    gap: 2rem;
+   }
+
 
 .form-container::after{
     position: absolute;
@@ -530,6 +542,7 @@ nav {
 
 .form-container h2{
     font-size: var(--fs-body-600);
+    width: clamp(25ch,45ch,50ch);
 }
 
 .form-field{
@@ -542,9 +555,10 @@ nav {
     margin-bottom: 0.8rem;
 }
 
-.form-field:last-child{
+.form>.flex-row:last-child {
     margin-bottom: 2rem;
 }
+
 .field-label{
     font-size: var(--fs-body-300);
 }
@@ -593,7 +607,30 @@ nav {
     right: -3px;
 }
 
+#form-btn:disabled{
+    cursor: not-allowed;
+}
+
+.btn-text{
+    /* display: none; */
+}
+
+.btn-loading{
+    width: 80px;
+    height: 32px;
+    display: none;
+}
+
+.btn-calendly{
+    background-color: var(--clr-pc-300);
+    color: var(--clr-pc-100);
+    cursor: pointer;
+}
+
 .thank-you{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     display: none;
 }
 

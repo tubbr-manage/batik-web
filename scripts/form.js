@@ -18,7 +18,6 @@ document.querySelector('#form-btn').addEventListener("click", () => formSubmit()
 
 
 function openModal() {
-    window.scrollTo(0, 0);
     document.body.style.overflowY = 'hidden';
     let modal = document.querySelector('.modal-container');
     modal.style.display = 'block';
@@ -39,14 +38,18 @@ function validateContactForm(form) {
         form.name.classList.add('field-error');
         valid = false;
     }
-    if (!form.email.value.match(
-        /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    )) {
-        form.email.classList.add('field-error');
+    if (form.phone.value == "") {
+        form.phone.classList.add('field-error');
         valid = false;
     }
-    if (form.message.value == "") {
-        form.message.classList.add('field-error');
+    if (form.company_name.value == "") {
+        form.company_name.classList.add('field-error');
+        valid = false;
+    }
+    if (!form.w_email.value.match(
+        /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    )) {
+        form.w_email.classList.add('field-error');
         valid = false;
     }
     return valid;
@@ -57,6 +60,9 @@ function formSubmit() {
 
     try {
         console.log('clicked');
+        $('.btn-text').hide(200)
+        $('.btn-loading').show(200)
+        $('#form-btn').prop("disabled", true);
         isvalid = validateContactForm(form);
         if (isvalid) {
 
@@ -79,10 +85,16 @@ function formSubmit() {
                         $('.form').hide(300);
                         $('#form-btn').hide(200);
                         $('.thank-you').show(300);
+                        $('.btn-text').show(200)
+                        $('.btn-loading').hide(200)
                         form.reset();
+                        $('#form-btn').prop("disabled", false);
                     },
                     error: function () {
                         $('.error-message').show(300);
+                        $('#form-btn').prop("disabled", false);
+                        $('.btn-loading').hide(200)
+                        $('.btn-text').show(200)
                     }
                 });
             });
@@ -90,11 +102,14 @@ function formSubmit() {
         }
         else {
             $('.toast').show(300).delay(6000).hide(300);
+            $('.btn-text').show(200)
+                        $('.btn-loading').hide(200)
         }
 
     }
     catch (e) { console.log(e) }
     finally {
-        // form.reset();
+                        // $('#form-btn').prop("disabled", false);
+
     }
 }

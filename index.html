@@ -839,31 +839,67 @@
                 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
                 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
                     async></script>
-                <a href=""
-                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/meetgrowth/meet'});return false;">Book
+                <a class="btn btn-calendly" href=""
+                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/athira-s/trybatik'});return false;">Book
                     a meet with us</a>
                 <!-- Calendly link widget end -->
 
             </div>
             <form class="form">
                 <h2>Yes, Get me started on Bakit. Please share more information and help me get started for free!</h2>
-                <div class="form-field">
-                    <label for="name" class="field-label">Your Name <span class="mandatory">*</span></label>
-                    <input type="text" name="name" id="name" class="field">
+
+                <div class="flex-row">
+                    <div class="form-field">
+                        <label for="name" class="field-label">Full Name <span class="mandatory">*</span></label>
+                        <input type="text" name="name" id="name" class="field">
+                    </div>
+                    <div class="form-field">
+                        <label for="phone" class="field-label">Phone Number <span
+                                class="mandatory">*</span></label>
+                        <input type="text" name="phone" id="phone" class="field">
+                    </div>
                 </div>
-                <div class="form-field">
-                    <label for="email" class="field-label">Email Address <span class="mandatory">*</span></label>
-                    <input type="text" name="email" id="email" class="field">
+                <div class="flex-row">
+                    <div class="form-field">
+                        <label for="company_name" class="field-label">Company Name <span class="mandatory">*</span></label>
+                        <input type="text" name="company_name" id="company_name" class="field">
+                    </div>
+                    <div class="form-field">
+                        <label for="company_website" class="field-label">Company Website</label>
+                        <input type="text" name="company_website" id="company_website" class="field">
+                    </div>
                 </div>
-                <div class="form-field">
-                    <label for="message" class="field-label">Your Message <span class="mandatory">*</span></label>
-                    <textarea name="message" id="message" rows="4" class="field"></textarea>
+                <div class="flex-row">
+                    <div class="form-field">
+                        <label for="w_email" class="field-label">Work Email<span
+                                class="mandatory">*</span></label>
+                        <input type="text" name="w_email" id="w_email" class="field">
+                    </div>
+                    <div class="form-field">
+                        <label for="email" class="field-label">Personal Email</label>
+                        <input type="text" name="email" id="email" class="field">
+                    </div>
                 </div>
+                <!-- <div class="flex-row">
+                    <div class="form-field">
+                        <label for="message" class="field-label">Your Message <span class="mandatory">*</span></label>
+                        <textarea name="message" id="message" rows="4" class="field"></textarea>
+                    </div>
+                </div> -->
+
+
+                
             </form>
 
-            <button class="btn btn-cta" id="form-btn">Book a Demo</button>
-            <div class="error-message">Error : Please Contact <a
-                    href="mailto:batik@worldnetlabs.com">batik@worldnetlabs.com</a></div>
+            <button class="btn btn-cta" id="form-btn">
+                <span class="btn-text">Book a Demo</span>
+                <lottie-player class="btn-loading" src="assets/animation/loading_batik.json" background="transparent"
+                    speed="1" loop autoplay>
+                </lottie-player>
+            </button>
+            <div class="error-message">Error : Please Contact
+                <a href="mailto:athira@trybatik.com">athira@trybatik.com</a>
+            </div>
 
 
             <div class="close-btn"><span class="material-symbols-outlined">

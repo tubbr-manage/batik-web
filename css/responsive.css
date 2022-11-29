@@ -92,6 +92,10 @@
     .grid-container {
         margin-top: 2rem;
     }
+
+    .form-container {
+        padding: 2rem 4rem;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -126,7 +130,7 @@
         width: clamp(250px, 100%, 350px);
     }
 
-    .video-player-nav img{
+    .video-player-nav img {
         height: 10px;
     }
 
@@ -137,7 +141,7 @@
         margin-top: 2rem;
     }
 
-    .benefit-item-reverse{
+    .benefit-item-reverse {
         flex-direction: column-reverse;
     }
 
@@ -189,4 +193,46 @@
     .joruney-img {
         margin-bottom: 2rem;
     }
+
+    .form-container {
+        padding: 3rem 1rem 1.25rem 1rem;
+    }
+
+    .form-container h2{
+        font-size: var(--fs-body-600);
+        width: clamp(25ch,70%,50ch);
+        font-size: var(--fs-body-300);
+    }
+    .form>.flex-row {
+        flex-direction: column;
+        max-width: 100%;
+        gap: 0;
+    }
+    .form>.flex-row:last-child {
+        margin-bottom: 0.5rem;
+    }
+
+    .form-field {
+        gap: 4px;
+    }
+
+    .form-container::after{
+      display: none;
+    }
+
+    .toast{
+        font-size: 10px;
+        padding: 1rem;
+        border-left: none;
+        border-right: 5px solid black;
+        top: 0;
+        left: -3px;
+        max-height: min-content;
+    }
+
+    .close-btn{
+        width: 48px;
+        height: 48px;    
+    }
+
 }
