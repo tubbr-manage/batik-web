@@ -28,7 +28,8 @@ function closeModal() {
     let modal = document.querySelector('.modal-container');
     modal.style.display = 'none';
     document.querySelectorAll('.field-error').forEach((field) => field.classList.remove('field-error'));
-
+    $('.thank-you').hide(300);
+    $('.form').show(300);
 }
 
 function validateContactForm(form) {
@@ -103,13 +104,13 @@ function formSubmit() {
         else {
             $('.toast').show(300).delay(6000).hide(300);
             $('.btn-text').show(200)
-                        $('.btn-loading').hide(200)
+            $('.btn-loading').hide(200)
         }
 
     }
     catch (e) { console.log(e) }
     finally {
-                        // $('#form-btn').prop("disabled", false);
+        // $('#form-btn').prop("disabled", false);
 
     }
 }

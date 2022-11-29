@@ -202,6 +202,7 @@
         font-size: var(--fs-body-600);
         width: clamp(25ch,70%,50ch);
         font-size: var(--fs-body-300);
+        margin-inline: auto;
     }
     .form>.flex-row {
         flex-direction: column;
