@@ -494,7 +494,7 @@ nav {
     background-color: #1018288f;
     inset: 0;
     z-index: 999;
-    /* display: none; */
+    display: none;
 }
 
 .form-container{
