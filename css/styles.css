@@ -131,6 +131,7 @@ p {
     display: flex;
     flex-direction: row;
     align-content: center;
+    align-items: center;
 }
 
 .flex-col {
