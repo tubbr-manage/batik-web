@@ -118,7 +118,7 @@
     }
 
     #main-section>* {
-        backdrop-filter: blur(2px);
+        backdrop-filter: blur(10px);
     }
 
     .ta-r {
